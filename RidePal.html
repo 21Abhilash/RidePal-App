@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RidePal App</title>
+    <link rel="stylesheet" href="RidePal.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo">MobilityApp</div>
+        <nav>
+            <ul>
+                <li><a href="#track-ride">Track Ride</a></li>
+                <li><a href="#ride-options">Ride Options</a></li>
+                <li><a href="#payment-methods">Payment Methods</a></li>
+                <li><a href="#safety">Safety</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Section 1: Real-Time GPS Tracking & Navigation -->
+        <section id="track-ride">
+            <h2>Real-Time Ride Tracking</h2>
+            <p>Track your ride in real-time and view the estimated time of arrival (ETA).</p>
+            <div class="map">
+                <!-- Embed Google Maps or use map APIs -->
+                <iframe src="https://maps.google.com/maps?q=your-location&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </section>
+
+        <!-- Section 2: Multiple Ride Options -->
+        <section id="ride-options">
+            <h2>Choose Your Ride</h2>
+            <div class="ride-options">
+                <div class="option">
+                    <h3>Economy</h3>
+                    <p>Affordable rides for everyday trips.</p>
+                </div>
+                <div class="option">
+                    <h3>Luxury</h3>
+                    <p>Ride in style with premium vehicles.</p>
+                </div>
+                <div class="option">
+                    <h3>Carpool</h3>
+                    <p>Share your ride and save on costs.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 3: Payment Methods -->
+        <section id="payment-methods">
+            <h2>Flexible Payment Methods</h2>
+            <div class="payments">
+                <img src="https://pay.google.com/" alt="Google Pay">
+                <img src="https://www.apple.com/apple-pay/" alt="Apple Pay">
+                <img src="https://www.paypal.com/" alt="PayPal">
+                <img src="https://stripe.com/" alt="Credit Card">
+            </div>
+        </section>
+
+        <!-- Section 4: Ride Scheduling -->
+        <section id="ride-scheduling">
+            <h2>Schedule Your Ride</h2>
+            <form>
+                <label for="pickup">Pickup Location</label>
+                <input type="text" id="pickup" placeholder="Enter pickup location">
+
+                <label for="dropoff">Dropoff Location</label>
+                <input type="text" id="dropoff" placeholder="Enter dropoff location">
+
+                <label for="date">Schedule Date & Time</label>
+                <input type="datetime-local" id="date">
+
+                <button type="submit">Schedule Ride</button>
+            </form>
+        </section>
+
+        <!-- Section 5: Safety Features -->
+        <section id="safety">
+            <h2>Safety Features</h2>
+            <p>We prioritize your safety with the following features:</p>
+            <ul>
+                <li>SOS Emergency Button</li>
+                <li>Share Ride Status with Friends/Family</li>
+                <li>Driver Rating System</li>
+            </ul>
+        </section>
+
+        <!-- Section 6: Ride History & Receipts -->
+        <section id="ride-history">
+            <h2>Ride History</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Date</th>
+                        <th>Pickup</th>
+                        <th>Dropoff</th>
+                        <th>Cost</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Oct 10, 2024</td>
+                        <td>Main Street</td>
+                        <td>Downtown</td>
+                        <td>$15.00</td>
+                    </tr>
+                    <tr>
+                        <td>Oct 12, 2024</td>
+                        <td>Airport</td>
+                        <td>Hotel</td>
+                        <td>$25.00</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2024 RidePal APP. All rights reserved.</p>
+    </footer>
+</body>
+</html>
